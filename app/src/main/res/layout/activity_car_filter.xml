@@ -1,0 +1,131 @@
+<androidx.cardview.widget.CardView    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myCardView"
+    app:cardElevation="10dp"
+    android:layout_margin="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="First Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Last Name"
+            app:layout_constraintStart_toEndOf="@+id/textFirstName"
+            app:layout_constraintTop_toTopOf="@+id/textFirstName" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Email"
+            app:layout_constraintStart_toStartOf="@+id/textFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/textFirstName" />
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="County"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/carmake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Car make"
+            app:layout_constraintStart_toStartOf="@+id/country"
+            app:layout_constraintTop_toBottomOf="@+id/country" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Gender"
+            app:layout_constraintStart_toStartOf="@+id/carmake"
+            app:layout_constraintTop_toBottomOf="@+id/carmake" />
+
+        <TextView
+            android:id="@+id/jobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Job Title"
+            app:layout_constraintStart_toStartOf="@+id/gender"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Bio"
+            app:layout_constraintStart_toStartOf="@+id/jobTitle"
+            app:layout_constraintTop_toBottomOf="@+id/jobTitle" />
+
+        <TextView
+            android:id="@+id/colour"
+            android:layout_width="34dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Color"
+            app:layout_constraintStart_toEndOf="@+id/cormer"
+            app:layout_constraintTop_toTopOf="@+id/cormer" />
+
+        <TextView
+            android:id="@+id/cormer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text=","
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/carmake"
+            app:layout_constraintTop_toTopOf="@+id/carmake" />
+
+        <TextView
+            android:id="@+id/and"
+            android:layout_width="34dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="and"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/colour"
+            app:layout_constraintTop_toTopOf="@+id/colour" />
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="34dp"
+            android:layout_height="15dp"
+            android:text="Year"
+            app:layout_constraintStart_toEndOf="@+id/and"
+            app:layout_constraintTop_toTopOf="@+id/and" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
